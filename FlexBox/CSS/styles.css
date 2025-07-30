@@ -1,0 +1,15 @@
+body{
+    background-color: red;
+}
+
+.caja{
+    width: 200px;
+    height: 200px;
+    border: solid black;
+}
+
+#padre{
+    display: flex;
+    background-color: yellow;
+    height: 100hv;
+}
