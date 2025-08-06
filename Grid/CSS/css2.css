@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    height: 100vh;
+    width: 100vw;
+    background-color: red;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "nav main aside"
+    "footer footer aside";
+}
+
+header{
+    grid-area: header;
+    background-color: aqua;
+}
+
+nav{
+    grid-area: nav;
+    background-color: blue;
+}
+
+main{
+    grid-area: main;
+    background-color: blueviolet;
+}
+
+aside{
+    grid-area: aside;
+    background-color: yellow;
+}
+
+footer{
+    grid-area: footer;
+    background-color: black;
+}
