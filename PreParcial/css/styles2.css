@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.todo{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr ;
+    grid-template-areas: 
+    "azul azul azul azul azul"
+    "rojo rojo blanco verde verde"
+    "rojo rojo amarillo amarillo amarillo";
+    gap: 10px;
+    padding: 10px;
+}
+
+.caja{
+    border: 3px solid black;
+}
+
+
+.azul{
+    background-color: blue;
+    grid-area: azul;
+}
+
+.amarillo{
+    background-color: yellow;
+    grid-area: amarillo;
+
+}
+
+.rojo{
+    grid-area: rojo;
+    background-color: red;
+}
+
+.verde{
+    grid-area: verde;
+    background-color: green;
+}
+
+

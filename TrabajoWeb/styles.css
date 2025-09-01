@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    
+}
+
+header{
+    background-color: white;
+    height: 20%;
+    width: 100%;
+}
+
+.contenedor{
+    width: 100%;
+    height: 75%;
+    background-color:aqua ;
+    border: 1px solid blue;
+    
+}
+
+#cajitas{
+    width: 100%;
+    height: 30%;
+    background-color: black;
+    display: flex;
+}
+
+.cajaChica{
+    border: 5px solid blue;
+    width: 25%;
+    height: 100%;
+    background-color: brown;
+}
+
+
+footer{
+    background-color: black;
+    width: 100%;
+    height: 40%;
+}

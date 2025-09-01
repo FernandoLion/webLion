@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100hv;
+    width: 100vw;
+    background-color: #121826;
+    background-image: url(../resources/Background_image.svg);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+
+.todo {
+    margin: 10% 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30%;
+    width: 80%;
+
+}
+
+h1 {
+    padding: 10px 0 10px 0;
+    font-size: 35px;
+    text-align: center;
+    color: aliceblue;
+}
+
+h3 {
+    text-align: center;
+    font-size: 18px;
+    color: #212936;
+}
+
+.contentCajas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-top: 60px;
+    gap: 60px;
+}
+
+.cajas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color: #212936;
+    height: 420px;
+    max-width: 100%;
+    padding: 35px;
+}
+
+.icono {
+    background-color: #FDEED9;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h2 {
+    font-size: 20px;
+    color: white;
+}
+
+
+.textCaja {
+    width: 80%;
+}
+
+.imgCaja {
+    border-radius: 15px;
+    height: 190px;
+    overflow: hidden;
+
+}
+
+img {
+    object-fit: cover;
+}
+
+h5 {
+    font-size: 15px;
+    color: #AFB2B8;
+}
+
+
+.contentCajaImg{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media(min-width:1024px) {
+
+    body {
+        justify-content: center;
+    }
+
+    .todo {
+        width: 80vw;
+    }
+
+    #title{
+        width: 40%;
+        gap: 30px;
+    }
+
+    h3{
+        font-size: 15px;
+        color: white;
+    }
+
+    .contentCajas{
+        flex: 2;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 60px;
+    }
+
+    .cajas{
+        width: 40%;
+        padding: 20px;
+    }
+
+    
+
+}
+
+
+@media(min-width:1280px) {
+
+
+
+
+
+.contentCajas{
+    width: 100%;
+    justify-content: space-around;
+}
+
+    .cajas{
+        width: 25%;
+        
+    }
+
+
+}

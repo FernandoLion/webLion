@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.todo{
+    height: 100vh;
+    width: 100vw;
+
+}
+
+
+
+.verde{
+    background-color: green;
+    height: 120px;
+    width: 100pxs;
+   
+}
+
+.rojo{
+    background-color: red;
+    height: 60px;
+    width: 100%;
+}
+
+
+.amarillo{
+    background-color: yellow;
+    height: 300px;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.verde2{
+    background-color: greenyellow;
+    height: 45%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.gris{
+    height: 40%;
+    background-color: grey;
+    width: 100%;
+}
+
+.azul{
+    background-color: blue;
+    height: 60px;
+    
+}
+
+.rosado{
+    background-color: pink;
+    height: 120px;
+}
+
+
+@media(min-width:770px){
+    body{
+        height: 100vh;
+    }
+
+
+    .centro{
+        height: 50%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .amarillo{
+        width: 75%;
+        height:100% ;
+    }
+
+    .azul{
+        width: 25%;
+        height: 100%;
+    }
+
+
+    .verde{
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rosado{
+        height: 20%;
+    }
+
+    .rojo{
+        height: 10%;
+    }
+
+
+    .cuadrito{
+        background-color: yellow;
+        height: 20px;
+        width: 20px;
+        border: 3px solid red;
+    }
+
+}

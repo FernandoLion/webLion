@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "info info cuadro1 cuadro2"
+        "infoa cuadro3 cuadro4 cuadro5";
+    height: 80%;
+    width: 80vw;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+
+.gris {
+    grid-area: info;
+    background-color: #F3F4F6;
+}
+
+
+.cuadros.a {
+    background-color: #F3F4F6;
+    grid-area: infoa;
+
+}
+
+.cuadros.b {
+    background-color: #C1B6F8;
+    grid-area: cuadro1;
+}
+
+.cuadros.c {
+    background-color: #EDACD2;
+    grid-area: cuadro2;
+}
+
+.cuadros.d {
+    background-color: #9DC4F8;
+    grid-area: cuadro3;
+}
+
+.cuadros.e {
+    background-color: #F8D8B0;
+    grid-area: cuadro4;
+}
+
+.cuadros.f {
+    background-color: #86E7D4;
+    grid-area: cuadro5;
+}
+
+@media(max-width:1024px) {
+    body {
+        border: 2px solid red;
+    }
+
+    .todo {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "info info info"
+            "cuadro1 cuadro2 cuadro3"
+            "infoa cuadro4 cuadro5";
+    }
+}
+
+
+@media(max-width:640px) {
+
+.todo{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+.cuadros{
+    height: 250px;
+    width: 90%;
+}
+
+.cuadros.gris{
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+}
